@@ -39,6 +39,7 @@ not linearly separable. So, we can not use SVM to detect ddos attack.
 # Project  Structure
 
 ```text
+.
 ├── controller
 │   ├── collect_benign_ddos_trafic.py
 │   ├── data
@@ -47,15 +48,32 @@ not linearly separable. So, we can not use SVM to detect ddos attack.
 │   ├── DT_controller.py
 │   ├── KNN_controller.py
 │   ├── LR_controller.py
-│   ├── ML.py
 │   ├── NB_controller.py
 │   ├── __pycache__
-│   │   ├── DT_controller.cpython-37.pyc
-│   │   ├── switch.cpython-311.pyc
-│   │   └── switch.cpython-37.pyc
 │   ├── RF_controller.py
 │   ├── SVM_controller.py
 │   └── switch.py
+├── images
+│   ├── cm_allml.png
+│   ├── cm_dt2.png
+│   ├── cm_dt.png
+│   ├── cm_knn2.png
+│   ├── cm_knn.png
+│   ├── cm_lr2.png
+│   ├── cm_lr.png
+│   ├── cm_nb2.png
+│   ├── cm_nb.png
+│   ├── cm_rf2.png
+│   ├── cm_rf.png
+│   ├── cm_svm2.png
+│   ├── cm_svm.png
+│   ├── dataset2.png
+│   ├── dataset.png
+│   ├── dataset_protocol2.png
+│   ├── dataset_protocol.png
+│   ├── img.png
+│   ├── protocol2.png
+│   └── protocol.png
 ├── mininet
 │   ├── generate_benign_trafic.py
 │   ├── generate_ddos_trafic.py
@@ -74,15 +92,14 @@ not linearly separable. So, we can not use SVM to detect ddos attack.
 │       ├── lr_model.pkl
 │       ├── nb_model.pkl
 │       ├── rf_model.pkl
-│       ├── svm1_model.pkl
 │       └── svm_model.pkl
 ├── README.MD
+├── requirements.txt
 └── webserver
     ├── index.html
     └── test.zip
 
-8 directories, 34 files
-
+9 directories, 50 files
 
 ```
 
@@ -316,9 +333,9 @@ netmask 255.255.255.0
 gateway 192.168.55.2
 ```
 
-## VM links
-1. Mininet VM:
-2. Ryu VM :
+### VM links , To use vm you need to download and install VMWare Workstation Player
+1. `Mininet VM:` https://mega.nz/file/arpwHBqB#kJgaweO0KtrvA5E5IiEnEv9InXYEPN33U24OHMwJLEw
+2. `Ryu VM :` https://mega.nz/file/L6xVTJyJ#IDXeAqDNM_Mo62jUuAgWD4zj--WyJS41_pdjeLPJHSo
 # Known issues
 
 1. SVM algorithm is not working properly.
